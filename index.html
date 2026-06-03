@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siembra de Maíz</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* ENCABEZADO */
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* CARRUSEL */
+.slider{
+    width:100%;
+    height:450px;
+    overflow:hidden;
+    position:relative;
+}
+
+.slides{
+    display:flex;
+    width:400%;
+    animation:slide 16s infinite;
+}
+
+.slides img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}
+    100%{margin-left:-300%;}
+}
+
+/* GALERÍA */
+.galeria{
+    padding:40px 20px;
+}
+
+.galeria h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.grid img:hover{
+    transform:scale(1.05);
+}
+
+/* CONTACTO */
+.contacto{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.whatsapp{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:15px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* UBICACIÓN */
+.ubicacion{
+    padding:40px 20px;
+}
+
+.ubicacion h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2e7d32;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+}
+
+/* PIE */
+footer{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>siembra del maiz</h1>
+    <p>tradicion que pasa de generacion, en generacion</p>
+</header>
+
+<!-- CARRUSEL -->
+<section class="slider">
+    <div class="slides">
+        <img src="maiz13.jpeg" alt="maiz13">
+        <img src="maiz8.3.jpeg" alt="maiz8.3">
+        <img src="maiz14.jpeg" alt="maiz14">
+        <img src="maiz12.jpeg" alt="maiz12">
+    </div>
+</section>
+
+<!-- GALERÍA -->
+<section class="galeria">
+    <h2>Galería de Imágenes</h2>
+
+    <div class="grid">
+
+        <!-- Cambia las URLs por tus fotografías -->
+
+        <img src="maiz9.2.jpeg"alt="maiz9.2">
+        <img src="maiz5.jpeg"alt="maiz5">
+        <img src="maiz14.jpeg"alt="maiz14">
+        <img src="maiz10.jpeg"alt="maiz10">
+        <img src="maiz11.jpeg"alt="maiz11">
+        <img src="maiz8.jpeg"alt="maiz8">
+        <img src="maiz9.jpeg"alt="maiz9">
+        <img src="maiz9.2.jpeg" alt="maiz9.2">
+        <img src="maiz1.jpeg"alt="maiz1">
+        <img src="maiz6.jpeg"alt="maiz6">
+
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto">
+    <h2>Contáctanos</h2>
+    <br>
+
+    <!-- Reemplaza 5219530000000 por tu número -->
+    <a class="whatsapp"
+       href="https://wa.me/953125133224"
+       target="_blank">
+       📱 WhatsApp
+    </a>
+</section>
+
+<!-- UBICACIÓN -->
+<section class="ubicacion">
+    <h2>Nuestra Ubicación</h2>
+
+    <!-- Reemplaza por tu mapa de Google Maps -->
+    <iframe
+        src="https://maps.google.com/maps?q=Tlaxiaco%20de%20oaxaca&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+</section>
+
+<footer>
+    <p>© 2026 Producción de Maíz - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
